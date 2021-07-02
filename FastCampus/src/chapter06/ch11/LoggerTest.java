@@ -4,7 +4,7 @@ public class LoggerTest {
 
 	public static void main(String[] args) {
 		MyLogger logger = MyLogger.getLogger();//½Ì±ÛÅæ
-		logger.log("log Test");//·Î±×¸¦ Âï´Â´Ù.
+		logger.log("Log Test");//·Î±×¸¦ Âï´Â´Ù.
 	}
 
 }

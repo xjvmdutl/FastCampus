@@ -14,5 +14,6 @@ public class StudentTest {
 			myLogger.warning(e.getMessage()); 
 		}
 		Student student = new Student("James");
+		String sName = student.getStudentName();
 	} 
 }
