@@ -42,12 +42,12 @@ public class Robot {
 
 				if (newX >= 0 && newX < WIDTH
 							&& newY >= 0 && newY < HEIGHT
-							&& maze.myMaze[newY][newX] == NOTVISIT
-							&& markArray[newY][newX] == NOTVISIT) {										
+							&& maze.myMaze[newX][newY] == NOTVISIT
+							&& markArray[newX][newY] == NOTVISIT) {										
 					Move newPosition = new Move(newX, newY);
 					newPosition.direction = direction + 1;
 					stack.push(newPosition);
-					markArray[y][x] = VISIT;
+					markArray[x][y] = VISIT;
 
 					x = newX;
 					y = newY;
@@ -59,7 +59,7 @@ public class Robot {
 						newPosition.y = newY;
 						newPosition.direction = 0;
 						stack.push(newPosition);
-						markArray[newY][newX] = VISIT;
+						markArray[newX][newY] = VISIT;
 					}
 				}else {
 					direction++;

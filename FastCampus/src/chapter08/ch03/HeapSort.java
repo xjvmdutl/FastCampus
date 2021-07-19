@@ -31,6 +31,7 @@ public class HeapSort {
 		//root를 삭제 후 가장 마지막 node를 맨위로 올린다.
 		//그 후, 밑으로 내려가면서 작은 수와 비교해 나가면서 swap을 진행한다.
 		int parent;
+		
 		int child;
 		int data;
 		int temp;
